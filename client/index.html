@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullstack musica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>fullstack app musica</h1>
+    <div class="form-container">
+        <h2>fullstack app musica</h2>
+        <form id="songForm">
+
+            <label for="title">Nombre de la Canción</label>
+            <input type="text" id="title" name="title" placeholder="Nombre de la Canción" required>
+
+            <label for="artist">Artista</label>
+            <input type="text" id="artist" name="artist" placeholder="Artista" required>
+
+            <label for="youtubeLink">URL del Video de YouTube</label>
+            <input type="url" id="youtubeLink" name="youtubeLink" placeholder="URL del Video de YouTube" required pattern="https?://.+">
+
+            <label for="comments">Comentarios (opcional)</label>
+            <textarea id="comments" name="comments" placeholder="Comentarios (opcional)" rows="3"></textarea>
+
+            <button type="submit">Agregar Canción</button>
+        </form>
+        <p id="formMessage"></p>
+    </div>
+
+    <button id="randomButton">Obtener Canción Aleatoria</button>
+    <div id="songContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
